@@ -19,7 +19,7 @@ Flutter Store App – Évaluation Platzi
 Ce projet est une application Flutter développée dans le cadre de l’évaluation sur les stores avec Platzi.
 
 👥 Composition du groupe
-Moi (Ton prénom)
+SIAPRI & Samiya 
 
 Samiya – a développé la partie détails produit
 
