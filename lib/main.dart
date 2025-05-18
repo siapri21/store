@@ -1,23 +1,22 @@
 // main
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:store/providers/card_provider.dart';
 import 'package:store/providers/category_provider.dart';
 import 'package:store/services/router_service.dart';
 import 'package:store/theme/app_theme.dart';
-import 'package:store/providers/product_provider.dart';
 
-
+void main() => runApp(
   // ajout des providers
- void main() => runApp(
-  MultiProvider( // Un SEUL MultiProvider
+  MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (context) => CategoryProvider()),
-      ChangeNotifierProvider(create: (context) => ProductProvider()),
+      ChangeNotifierProvider(create: (context) => CartProvider()),
+
     ],
-    child: const MyStore(), // const ajouté si possible
+    child: MyStore(),
   ),
 );
-
 
 // widget (classe) de l'application
 class MyStore extends StatelessWidget {
@@ -37,6 +36,3 @@ class MyStore extends StatelessWidget {
     );
   }
 }
-
-  
-

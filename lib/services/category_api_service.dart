@@ -25,7 +25,7 @@ class CategoryApiService {
         return Category(
           id: category['id'],
           name: category['name'],
-          slug: category['slug'],
+          slug : category['slug'],
           image: category['image'],
         );
       }).toList();
