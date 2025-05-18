@@ -5,7 +5,6 @@ import 'dart:convert'; // Pour json.decode
 
 class ProductProvider with ChangeNotifier {
   List<Product> _products = [];
-
   List<Product> get products => _products;
 
   // Récupère les produits par catégorie
